@@ -3,17 +3,18 @@ using namespace std;
 
 int main() {
    
-   float a,b,x,y,z;
-    
+   float a=0,b=0,x=0,y=0,z=0;
+    cin>>a>>b>>x>>y>>z;
     if(x<0 & y>0){
-        cout<<z = a*x-b*y<<endl;
+        z = a*x-b*y;
     }
-    else if(x>=0 & x<=0){
-        cout<<z = a*(x*x)-b*y<<endl;
+    else if(x>=0 & y<=0){
+        z = a*(x*x)-b*y;
     }
     else{
-        cout<<z = a*y+b*(y*y);
+        z = a*x+b*(y*y);
     }
+   cout<<z;
    
    return 0;
 }
